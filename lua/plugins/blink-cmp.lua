@@ -12,5 +12,8 @@ return {
       list = { selection = { preselect = false, auto_insert = true } },
       menu = { auto_show = false },
     },
+    sources = {
+      providers = { buffer = { enabled = false } },
+    },
   },
 }
