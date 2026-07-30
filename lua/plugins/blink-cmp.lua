@@ -4,12 +4,8 @@ return {
   opts = {
     keymap = {
       preset = "enter", -- Use 'enter' as a base or 'none'
-      ["<Tab>"] = { "select_next", "snippet_forward", "fallback" },
-      ["<S-Tab>"] = { "select_prev", "snippet_backward", "fallback" },
-      ["<C-Tab>"] = {
-        function(cmp) return cmp.select_and_accept { idx = 1 } end,
-        "fallback",
-      },
+      ["<C-Tab>"] = { "select_next", "snippet_forward", "fallback" },
+      ["<C-S-Tab>"] = { "select_prev", "snippet_backward", "fallback" },
     },
     -- Optional: auto-insert the selection while tabbing
     completion = {
